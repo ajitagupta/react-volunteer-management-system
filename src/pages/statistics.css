@@ -1,0 +1,94 @@
+/* Main container */
+.statistics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  max-width: 100vw;  /* Ensure content stays within viewport width */
+  overflow-x: hidden;  /* Hide horizontal scroll if any */
+}
+
+/* First Row: Boxes */
+.statistics-boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;  /* Decrease width to fit more on the screen */
+  margin-bottom: 10px;  /* Reduce bottom margin */
+  padding: 0;  /* Remove padding around container */
+}
+
+.stat-box {
+  background-color: #c4b47c; /* Gold color */
+  color: #000;
+  padding: 8px;  /* Reduce padding inside the box */
+  border-radius: 8px;
+  text-align: center;
+  width: 18%; /* Adjust box width to fit 5 boxes */
+  font-size: 16px;  /* Adjust font size */
+  font-weight: bold;
+  margin: 0 5px;  /* Reduce margin between boxes */
+}
+
+.stat-box:last-child {
+  margin-right: 0; /* Remove margin on the last box */
+}
+
+/* Second Row: Charts */
+.statistics-charts {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;  /* Adjust width for better fit */
+  margin-top: 10px;  /* Adjust margins between rows */
+  margin-bottom: 10px;
+  flex-wrap: wrap; /* Wrap items if they don't fit */
+}
+
+.chart-box {
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  padding: 15px;  /* Reduce padding inside the chart box */
+  width: 30%; /* Adjust width for better fit */
+  color: #c4b47c;
+  margin: 10px;  /* Adjust margin for better spacing */
+  max-width: 320px;
+}
+
+.chart-box h3 {
+  text-align: center;
+  color: #c4b47c;
+  margin-bottom: 10px;
+}
+
+/* Canvas adjustments for charts */
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Adjust the width of the third row */
+.third-row {
+  display: flex;
+  justify-content: flex-start; /* Align the third row under the first column of the second row */
+  width: 100%;
+  padding: 10px 0;  /* Reduce padding for better fit */
+}
+
+/* Adjust the bar chart card */
+.chart-card {
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;  /* Reduce padding */
+  width: 45%;  /* Adjust width */
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  /* Slightly reduce shadow */
+}
+
+.chart-card h3 {
+  color: #c4b47c;  /* Gold for headings */
+  text-align: center;
+  margin-bottom: 10px;  /* Reduce margin below heading */
+}
+

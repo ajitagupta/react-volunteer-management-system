@@ -1,0 +1,294 @@
+/* Dashboard Styles */
+body {
+  background-color: #000;  /* Black background */
+  color: #fff !important;;  /* White text */
+  font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #c4b47c;  /* Gold color for headings */
+}
+
+.dashboard-page {
+  text-align: center;
+  padding: 30px;
+  background-color: #1a1a1a;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;  /* Stack sections vertically */
+  align-items: center;
+  padding: 20px;
+}
+
+/* Profile Header with Logout Button */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logout-btn {
+  background-color: #c4b47c;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #b1a46f;
+}
+
+.assigned-shifts, .shift-list, .profile-section, .completed-shifts {
+  background-color: #111;
+  width: 100%;
+  max-width: 800px;  /* Constrain max width for better layout */
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: left;  /* Align content to the left */
+}
+
+.assigned-shifts h2, .shift-list h2, .profile-section h2, .completed-shifts h2 {
+  color: #c4b47c;  /* Gold color for section titles */
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #333;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+li strong {
+  color: #c4b47c;  /* Gold color for important text */
+}
+
+/* Shift Item Styling for Available Shifts and Assigned Shifts */
+.shift-item-volunteer, .completed-shift-item {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;  /* Align items to the top/left */
+  margin-bottom: 10px;
+  text-align: left;  /* Ensure text is left-aligned */
+  width: 96%;  /* Ensure the shift items take full width */
+  position: relative;  /* Position the container relative to the button */
+}
+
+/* Ensure left-alignment for content in completed shifts */
+.completed-shift-item {
+  flex-direction: column;  /* Stack content vertically */
+  align-items: flex-start;  /* Align content to the left */
+}
+
+/* Shift Details Styling */
+.shift-details {
+  flex-grow: 1;
+}
+
+.shift-details strong {
+  color: #c4b47c;  /* Gold text color */
+}
+
+
+button.apply-btn {
+  background-color: #c4b47c;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.apply-btn:hover {
+  background-color: #b1a46f;
+}
+
+button.apply-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Profile Picture Styling */
+.profile-picture-section {
+  margin-bottom: 20px;  /* Add space between picture and other profile details */
+}
+
+.profile-picture-preview img {
+  width: 150px;  /* Set a fixed width for the profile picture */
+  height: 150px;
+  border-radius: 50%;  /* Circular profile picture */
+  object-fit: cover;  /* Ensure the image covers the area */
+  margin-top: 10px;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  border: 1px solid #c4b47c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #c4b47c;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Completed Shifts Section Styles */
+.completed-shift-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.rating-section, .comment-section {
+  margin-top: 10px;
+}
+
+/* Fixing the Textarea for Feedback Section */
+textarea {
+  width: 500px;  /* Make it take full width */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #333;  /* Gray background to match other elements */
+  border: 1px solid #c4b47c;  /* Gold border to match the theme */
+  color: #fff;  /* White text for contrast */
+  resize: vertical;  /* Allow vertical resizing only */
+  box-sizing: border-box;  /* Ensure padding doesn't affect the width */
+}
+
+textarea::placeholder {
+  color: #bbb;  /* Lighter gray for the placeholder text */
+}
+
+/* Star Rating Styles */
+.star {
+  font-size: 24px;
+  color: white;  /* Lighter gold for stars */
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.star.selected {
+  color: #c4b47c;  /* Gold color for selected stars */
+}
+
+.submit-feedback-btn {
+  background-color: #c4b47c;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 150px;
+  white-space: nowrap;  /* Prevent text wrapping */
+}
+
+.submit-feedback-btn:hover {
+  background-color: #b1a46f;
+}
+
+/* Categories Section Styling */
+.categories-section {
+  margin-top: 20px;
+}
+
+.categories-section h3 {
+  color: #c4b47c; /* Gold color for section title */
+  margin-bottom: 10px;
+}
+
+.categories-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #333; /* Background for category items */
+  border-radius: 5px;
+  color: #fff;
+  position: relative;
+}
+
+.delete-category-btn {
+  background-color: #c4b47c; /* Gold color for delete button */
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px; /* Position the button to the right */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.delete-category-btn:hover {
+  background-color: #b1a46f; /* Darker gold on hover */
+}
+
+.add-category {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-category select {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #c4b47c;
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+}
+
+.add-category button {
+  padding: 5px 10px;
+  background-color: #c4b47c;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-category button:hover {
+  background-color: #b1a46f;
+}

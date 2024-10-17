@@ -1,0 +1,85 @@
+/* Login Page Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #111;  /* Dark background */
+  font-family: 'Arial', sans-serif;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;  /* Black background */
+}
+
+.login-container {
+  background-color: #1a1a1a;  /* Dark grey box */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 400px;
+}
+
+.login-title {
+  color: #c4b47c;  /* Gold color for title */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  background-color: #333;  /* Dark input background */
+  border: 1px solid #c4b47c;  /* Gold border */
+  color: #fff;  /* White text */
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.login-input::placeholder {
+  color: #bbb;  /* Lighter placeholder text */
+}
+
+.login-btn {
+  background-color: #c4b47c;
+  color: #000;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #b1a46f;
+}
+
+.login-error {
+  color: #e74c3c;  /* Red error message */
+  margin-top: 15px;
+}
+
+.login-register {
+  margin-top: 20px;
+}
+
+.register-link {
+  color: #c4b47c;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.register-link:hover {
+  color: #b1a46f;
+}
