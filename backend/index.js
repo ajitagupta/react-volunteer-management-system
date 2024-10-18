@@ -16,3 +16,5 @@ app.use('/api/shifts', shiftsRoute);  // Shifts routes
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
+
+module.exports = app;
