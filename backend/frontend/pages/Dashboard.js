@@ -63,7 +63,8 @@ const handleRemoveCategory = (category) => {
         }
 
         // Fetch available shifts
-        const response = await fetch('http://localhost:5000/api/shifts', {
+        //const response = await fetch('http://localhost:5000/api/shifts', {
+        const response = await fetch('${window.location.origin}/api/shifts', {
           headers: {
             Authorization: `Bearer ${token}`,  // Include the token in the Authorization header
           },
@@ -91,8 +92,9 @@ const handleRemoveCategory = (category) => {
         throw new Error('No token found, please log in');
       }
 
-      const response = await fetch(`http://localhost:5000/api/shifts/apply`, {
-        method: 'POST',
+      //const response = await fetch(`http://localhost:5000/api/shifts/apply`, {
+      const response = await fetch(`{window.location.origin}/api/shifts/apply`, {
+          method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`,  // Include the token in the Authorization header

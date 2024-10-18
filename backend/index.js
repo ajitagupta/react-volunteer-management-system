@@ -2,6 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const { authRouter } = require('./routes/auth');
 const shiftsRoute = require('./routes/shifts');  // Import the shifts route
+const path = require("path");
+
 
 const app = express();
 const port = 5000;
@@ -13,8 +15,11 @@ app.use(express.json());  // To parse JSON bodies
 app.use('/api/auth', authRouter);  // Auth routes
 app.use('/api/shifts', shiftsRoute);  // Shifts routes
 
+
+app.get("/", (req, res) => {
+  app.use(express.static(path.resolve(__dirname, "frontend", "build")));
+  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.js"))
+});
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
-
-module.exports = app;
