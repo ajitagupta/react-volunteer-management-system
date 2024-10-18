@@ -14,8 +14,8 @@ const RegisterPage = () => {
     e.preventDefault();
 
     try {
-     // const response = await fetch('http://localhost:5000/api/auth/register', {
-      const response = await fetch('${window.location.origin}/api/auth/register', {
+     const response = await fetch('http://localhost:5000/api/auth/register', {
+      //const response = await fetch('${window.location.origin}/api/auth/register', {
       method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -32,6 +32,7 @@ const RegisterPage = () => {
         setError(data.message);
       }
     } catch (error) {
+      console.log(window.location.origin);
       setError('Failed to register. Please try again.');
     }
   };
