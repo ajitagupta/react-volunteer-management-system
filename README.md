@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Volunteer Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Volunteer Management System designed for event organizers and volunteers to manage shifts, provide feedback, and streamline communication.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Admin Dashboard**: For organizers to manage volunteers, assign shifts, and view feedback.
+- **Volunteer Dashboard**: For volunteers to view assigned shifts, available shifts, completed shifts, and provide feedback.
+- **Authorization System**: Role-based access for organizers and volunteers.
+- **Shift Management**: Organizers can assign shifts, and volunteers can view and apply for available shifts.
+- **Feedback System**: Volunteers can rate completed shifts and submit comments for improvement.
 
-### `npm start`
+## Sample Credentials
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Use the following credentials to log in and test the system:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Organizer Account
+- **Username**: organizer
+- **Password**: pwd
 
-### `npm test`
+### Volunteer Account
+- **Username**: volunteer
+- **Password**: pwd
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Dashboards
 
-### `npm run build`
+- **Organizer Dashboard**: Allows access to the following sections via the sidebar:
+  - Volunteers
+  - Assigned Shifts
+  - Available Shifts
+  - Feedback
+  - Statistics
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Volunteer Dashboard**: Displays:
+  - Assigned Shifts
+  - Available Shifts
+  - Completed Shifts
+  - Option to submit feedback and rate shifts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/volunteer-management-system.git
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+    cd volunteer-management-system
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+    npm install
+   
+4. Run the application:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
 
-## Learn More
+Open the application in your browser at http://localhost:3000/ and log in with the provided sample credentials.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Future Enhancements
+- Integration of real-time notifications for volunteers about shift updates.
+- Advanced reporting for organizers to track volunteer engagement and performance.
+- Multi-language support for international events.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+Feel free to contribute by opening issues or submitting pull requests. We welcome all contributions to improve the system and add new features.
+   
