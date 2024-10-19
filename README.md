@@ -57,6 +57,7 @@ Use the following credentials to log in and test the system:
 4. Run the frontend application:
 
    ```bash
+   cd ..
    npm start
 
 Open the application in your browser at http://localhost:3000/ and log in with the provided sample credentials.
