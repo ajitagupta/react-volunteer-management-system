@@ -48,7 +48,7 @@ Use the following credentials to log in and test the system:
    ```bash
     cd volunteer-management-system
 
-3. Rund the backend application first:
+3. Run the backend application first:
 
    ```bash
     cd backend
