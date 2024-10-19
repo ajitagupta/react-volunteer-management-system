@@ -48,12 +48,13 @@ Use the following credentials to log in and test the system:
    ```bash
     cd volunteer-management-system
 
-3. Install dependencies:
+3. Rund the backend application first:
 
    ```bash
-    npm install
+    cd backend
+    node index.js
    
-4. Run the application:
+4. Run the frontend application:
 
    ```bash
    npm start
